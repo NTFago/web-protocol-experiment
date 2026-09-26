@@ -119,6 +119,7 @@ npm run netlog:summary
 - `figures/paired-load-difference.svg`
 - `figures/paper-main-results.pdf`：主要指标的分组柱状图，中位数附 IQR；
 - `figures/paper-paired-rounds.pdf`：30 组配对轮次的 H1/H2 折线图。
+- `figures/paper-results-combined.pdf`：论文排版使用的综合结果图。
 
 `verify` 遇到无效运行会返回非零状态，并打印原因；原始文件不会被删除。`summarize` 只用 `valid=true` 的运行计算组内统计和配对差值。
 
