@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-09-25T09:45:58.003Z",
+  "rule": "Redact x-archive-orig-set-cookie values only",
+  "results": [
+    {
+      "file": "netlog/2026-09-25T05-18-20-770Z-default.json",
+      "replacement_count": 2
+    },
+    {
+      "file": "netlog/2026-09-25T05-18-33-942Z-quic-disabled.json",
+      "replacement_count": 2
+    }
+  ]
+}

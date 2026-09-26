@@ -1,0 +1,22 @@
+Read-only verification UTC: 2026-09-25T09:47:50.9594375Z
+Experiment workflow write scope: web-protocol-experiment only.
+No command in the experiment workflow targeted web-dev for writing.
+Status: concurrent/external timestamp changes detected for main.tex and main.pdf; no restoration attempted.
+
+file=E:\project\homework\webdev\class1\web-dev\main.tex
+initial_observed_local_time=2026-09-25 12:24:46
+final_local_time=2026-09-25 17:46:57
+timestamp_matches_initial=False
+sha256=f0e0c712a07cf9dc9858720021c1462c15358c696d1c971738692f179ce4bf06
+
+file=E:\project\homework\webdev\class1\web-dev\main.pdf
+initial_observed_local_time=2026-09-25 12:25:10
+final_local_time=2026-09-25 17:47:14
+timestamp_matches_initial=False
+sha256=15eb532127b006309bd2ef35dbacc278de47085f2db838f305fd19a8189b03f3
+
+file=E:\project\homework\webdev\class1\web-dev\refs.bib
+initial_observed_local_time=2026-09-25 12:24:52
+final_local_time=2026-09-25 12:24:52
+timestamp_matches_initial=True
+sha256=56a42b53e70df3962e2aac374b0e40343f988ef10442b263827637e93ad76776

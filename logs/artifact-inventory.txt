@@ -1,0 +1,32 @@
+Generated UTC: 2026-09-25T09:48:28.6127146Z
+Root: E:\project\homework\webdev\class1\web-protocol-experiment
+Excluded: node_modules, .git, nginx/certs/localhost.key, checksums-sha256.csv
+Total files: 157
+Total bytes: 16447628
+
+Files by top-level location:
+.gitignore|files=1|bytes=130
+app|files=2|bytes=7681
+compose.yaml|files=1|bytes=680
+EXPERIMENT_RESULTS.md|files=1|bytes=7645
+figures|files=5|bytes=39448
+har|files=2|bytes=168540
+logs|files=22|bytes=4024905
+netlog|files=2|bytes=1450381
+nginx|files=3|bytes=3020
+package-lock.json|files=1|bytes=1270
+package.json|files=1|bytes=1406
+processed|files=7|bytes=569662
+raw|files=72|bytes=7227981
+README.md|files=1|bytes=5189
+screenshots|files=21|bytes=2869509
+scripts|files=15|bytes=70181
+
+Evidence checks:
+formal_raw_json=60
+warmup_json=10
+devtools_png=13
+automated_png=8
+figures_svg=5
+har=2
+netlog=2

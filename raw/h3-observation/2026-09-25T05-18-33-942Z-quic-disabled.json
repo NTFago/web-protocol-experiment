@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-09-25T05:18:37.634Z",
+  "url": "https://cloudflare-quic.com/",
+  "mode": "quic-disabled",
+  "browser_version": "153.0.8010.12",
+  "launch_arguments": [
+    "--log-net-log=E:\\project\\homework\\webdev\\class1\\web-protocol-experiment\\netlog\\2026-09-25T05-18-33-942Z-quic-disabled.json",
+    "--net-log-capture-mode=Default",
+    "--disable-quic"
+  ],
+  "netlog": "netlog\\2026-09-25T05-18-33-942Z-quic-disabled.json",
+  "observations": [
+    {
+      "visit_index": 1,
+      "timestamp": "2026-09-25T05:18:37.342Z",
+      "document_protocol": "h2",
+      "status": 200,
+      "alt_svc": "h3=\":443\"; ma=86400",
+      "remote_address": "[2001:2::14a]:443",
+      "protocol_set": [
+        "h2"
+      ],
+      "quic_disabled": true,
+      "screenshot": "screenshots\\automated\\2026-09-25T05-18-33-942Z-quic-disabled-visit1.png",
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-09-26T03:50:48.300Z",
+  "safe": true,
+  "note": "Screenshots were also visually checked for account or desktop information.",
+  "findings": [
+    {
+      "file": "har/h1-representative.har",
+      "entry_count": 28,
+      "cookie_object_count": 0,
+      "sensitive_header_count": 0,
+      "safe": true
+    },
+    {
+      "file": "har/h2-representative.har",
+      "entry_count": 28,
+      "cookie_object_count": 0,
+      "sensitive_header_count": 0,
+      "safe": true
+    },
+    {
+      "file": "netlog/2026-09-25T05-18-20-770Z-default.json",
+      "stripped_cookie_header_count": 12,
+      "stripped_set_cookie_header_count": 24,
+      "sanitized_set_cookie_header_count": 2,
+      "authorization_header_count": 0,
+      "unstripped_sensitive_header_count": 0,
+      "safe": true
+    },
+    {
+      "file": "netlog/2026-09-25T05-18-33-942Z-quic-disabled.json",
+      "stripped_cookie_header_count": 0,
+      "stripped_set_cookie_header_count": 16,
+      "sanitized_set_cookie_header_count": 2,
+      "authorization_header_count": 0,
+      "unstripped_sensitive_header_count": 0,
+      "safe": true
+    }
+  ]
+}

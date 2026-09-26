@@ -1,0 +1,551 @@
+[
+    {
+        "Id": "bae6eebfe9a4071d2db3135fde10f07d705adfa717ac7f70c53b9d2e9f7890dc",
+        "Created": "2026-09-25T05:16:22.846250591Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "node",
+            "server.mjs"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 484,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-09-25T09:42:40.81294843Z",
+            "FinishedAt": "2026-09-25T05:47:48.721659603Z",
+            "Health": {
+                "Status": "healthy",
+                "FailingStreak": 0,
+                "Log": [
+                    {
+                        "Start": "2026-09-25T09:42:47.242003453Z",
+                        "End": "2026-09-25T09:42:47.383024942Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-09-25T09:42:49.383725349Z",
+                        "End": "2026-09-25T09:42:49.521366833Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-09-25T09:42:51.522737364Z",
+                        "End": "2026-09-25T09:42:51.656372599Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-09-25T09:42:53.657099979Z",
+                        "End": "2026-09-25T09:42:53.778165534Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-09-25T09:42:55.778701259Z",
+                        "End": "2026-09-25T09:42:55.926075015Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    }
+                ]
+            }
+        },
+        "Image": "sha256:039ff3574fce320a24bcf573dde50a298b4ffc6456b2e8174f9cbf203bd648a9",
+        "ResolvConfPath": "/var/lib/docker/containers/bae6eebfe9a4071d2db3135fde10f07d705adfa717ac7f70c53b9d2e9f7890dc/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/bae6eebfe9a4071d2db3135fde10f07d705adfa717ac7f70c53b9d2e9f7890dc/hostname",
+        "HostsPath": "/var/lib/docker/containers/bae6eebfe9a4071d2db3135fde10f07d705adfa717ac7f70c53b9d2e9f7890dc/hosts",
+        "LogPath": "/var/lib/docker/containers/bae6eebfe9a4071d2db3135fde10f07d705adfa717ac7f70c53b9d2e9f7890dc/bae6eebfe9a4071d2db3135fde10f07d705adfa717ac7f70c53b9d2e9f7890dc-json.log",
+        "Name": "/web-protocol-experiment-app-1",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "web-protocol-experiment_default",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ],
+            "Init": true
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "bae6eebfe9a4",
+            "Domainname": "",
+            "User": "node",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "3000/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NODE_VERSION=24.15.0",
+                "YARN_VERSION=1.22.22"
+            ],
+            "Cmd": [
+                "node",
+                "server.mjs"
+            ],
+            "Healthcheck": {
+                "Test": [
+                    "CMD",
+                    "node",
+                    "-e",
+                    "fetch('http://127.0.0.1:3000/healthz').then(r=\u003e{if(!r.ok)process.exit(1)}).catch(()=\u003eprocess.exit(1))"
+                ],
+                "Interval": 2000000000,
+                "Timeout": 2000000000,
+                "Retries": 15
+            },
+            "Image": "web-protocol-experiment-app",
+            "Volumes": null,
+            "WorkingDir": "/app",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "62818d48d9b1b677e93a46e0018630f6a3db21ce5906b169d25fffa12d11442c",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:034d9ca8e1f23b32f1e68e2c0c4c8a808721a3dd64c1f458f1ca11f5c35812bf",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "web-protocol-experiment",
+                "com.docker.compose.project.config_files": "E:\\project\\homework\\webdev\\class1\\web-protocol-experiment\\compose.yaml",
+                "com.docker.compose.project.working_dir": "E:\\project\\homework\\webdev\\class1\\web-protocol-experiment",
+                "com.docker.compose.service": "app",
+                "com.docker.compose.version": "5.4.0"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "07a040eb44b3f533332a444514e0d35e556e54782897b892894531a303cebd8d",
+            "SandboxKey": "/var/run/docker/netns/07a040eb44b3",
+            "Ports": {
+                "3000/tcp": null
+            },
+            "Networks": {
+                "web-protocol-experiment_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "web-protocol-experiment-app-1",
+                        "app"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "3a8a5134f1d8c51a1f9da63a56660793ea8d76de4d050bb47aa47685347fe35d",
+                    "EndpointID": "321601218f74057475db8477c2c12881b1a973f86575c6bfc382f28d86da6180",
+                    "Gateway": "172.19.0.1",
+                    "IPAddress": "172.19.0.2",
+                    "MacAddress": "b6:d8:6e:6e:12:f9",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "web-protocol-experiment-app-1",
+                        "app",
+                        "bae6eebfe9a4"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:034d9ca8e1f23b32f1e68e2c0c4c8a808721a3dd64c1f458f1ca11f5c35812bf",
+            "size": 1430,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "211a2270e27ec8e2f8b189af6143d7abd24f016dc88960236c157da3aab21a77",
+        "Created": "2026-09-25T05:16:22.915959891Z",
+        "Path": "/docker-entrypoint.sh",
+        "Args": [
+            "nginx",
+            "-g",
+            "daemon off;"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 572,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-09-25T09:42:43.673634578Z",
+            "FinishedAt": "2026-09-25T05:47:48.794700783Z"
+        },
+        "Image": "sha256:30f1c0d78e0ad60901648be663a710bdadf19e4c10ac6782c235200619158284",
+        "ResolvConfPath": "/var/lib/docker/containers/211a2270e27ec8e2f8b189af6143d7abd24f016dc88960236c157da3aab21a77/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/211a2270e27ec8e2f8b189af6143d7abd24f016dc88960236c157da3aab21a77/hostname",
+        "HostsPath": "/var/lib/docker/containers/211a2270e27ec8e2f8b189af6143d7abd24f016dc88960236c157da3aab21a77/hosts",
+        "LogPath": "/var/lib/docker/containers/211a2270e27ec8e2f8b189af6143d7abd24f016dc88960236c157da3aab21a77/211a2270e27ec8e2f8b189af6143d7abd24f016dc88960236c157da3aab21a77-json.log",
+        "Name": "/web-protocol-experiment-nginx-1",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "E:\\project\\homework\\webdev\\class1\\web-protocol-experiment\\nginx\\nginx.conf:/etc/nginx/nginx.conf:ro",
+                "E:\\project\\homework\\webdev\\class1\\web-protocol-experiment\\nginx\\certs:/etc/nginx/certs:ro"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "web-protocol-experiment_default",
+            "PortBindings": {
+                "8441/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "8441"
+                    }
+                ],
+                "8442/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "8442"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "E:\\project\\homework\\webdev\\class1\\web-protocol-experiment\\nginx\\certs",
+                "Destination": "/etc/nginx/certs",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "E:\\project\\homework\\webdev\\class1\\web-protocol-experiment\\nginx\\nginx.conf",
+                "Destination": "/etc/nginx/nginx.conf",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "211a2270e27e",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "80/tcp": {},
+                "8441/tcp": {},
+                "8442/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NGINX_VERSION=1.28.0",
+                "PKG_RELEASE=1",
+                "DYNPKG_RELEASE=1",
+                "NJS_VERSION=0.8.10",
+                "NJS_RELEASE=1"
+            ],
+            "Cmd": [
+                "nginx",
+                "-g",
+                "daemon off;"
+            ],
+            "Image": "nginx:1.28.0-alpine",
+            "Volumes": null,
+            "WorkingDir": "/",
+            "Entrypoint": [
+                "/docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "b9e5484eaf7377b59c1ff013b4b5f04612db39ad7314c814fde4d9d92d812314",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "app:service_healthy:false",
+                "com.docker.compose.image": "sha256:09ab424a8c788f8d0fe3a64429f6d19dfa526885c8609b748d0943a75dcb9f8c",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "web-protocol-experiment",
+                "com.docker.compose.project.config_files": "E:\\project\\homework\\webdev\\class1\\web-protocol-experiment\\compose.yaml",
+                "com.docker.compose.project.working_dir": "E:\\project\\homework\\webdev\\class1\\web-protocol-experiment",
+                "com.docker.compose.service": "nginx",
+                "com.docker.compose.version": "5.4.0",
+                "maintainer": "NGINX Docker Maintainers \u003cdocker-maint@nginx.com\u003e"
+            },
+            "StopSignal": "SIGQUIT"
+        },
+        "NetworkSettings": {
+            "SandboxID": "1436e3bdefc8c4c1eac46f7e120fae2f193dbc665474448f648704b464a6daa3",
+            "SandboxKey": "/var/run/docker/netns/1436e3bdefc8",
+            "Ports": {
+                "8441/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "8441"
+                    }
+                ],
+                "8442/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "8442"
+                    }
+                ]
+            },
+            "Networks": {
+                "web-protocol-experiment_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "web-protocol-experiment-nginx-1",
+                        "nginx"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "3a8a5134f1d8c51a1f9da63a56660793ea8d76de4d050bb47aa47685347fe35d",
+                    "EndpointID": "11e38ed85db9ae139a6bae6e06de4c4ee6f22a63ae3d1da5c2fbd0a5dcee50fe",
+                    "Gateway": "172.19.0.1",
+                    "IPAddress": "172.19.0.3",
+                    "MacAddress": "8a:12:ff:82:0f:94",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "web-protocol-experiment-nginx-1",
+                        "nginx",
+                        "211a2270e27e"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:09ab424a8c788f8d0fe3a64429f6d19dfa526885c8609b748d0943a75dcb9f8c",
+            "size": 2493,
+            "annotations": {
+                "com.docker.official-images.bashbrew.arch": "amd64",
+                "org.opencontainers.image.base.digest": "sha256:eb8c00e3f75d52947cbfe3cc352671e70bcb78f850be8b64e6bf9652ee8853de",
+                "org.opencontainers.image.base.name": "nginx:1.28.0-alpine-slim",
+                "org.opencontainers.image.created": "2025-10-08T23:33:51Z",
+                "org.opencontainers.image.revision": "7f1d49f6f222f7e588a9066fd53a0ce43c3466a5",
+                "org.opencontainers.image.source": "https://github.com/nginx/docker-nginx.git#7f1d49f6f222f7e588a9066fd53a0ce43c3466a5:stable/alpine",
+                "org.opencontainers.image.url": "https://hub.docker.com/_/nginx",
+                "org.opencontainers.image.version": "1.28.0-alpine"
+            },
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]

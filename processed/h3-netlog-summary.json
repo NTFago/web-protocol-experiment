@@ -1,0 +1,131 @@
+{
+  "generated_at": "2026-09-25T09:46:46.797Z",
+  "summaries": [
+    {
+      "file": "netlog\\2026-09-25T05-18-20-770Z-default.json",
+      "mode": "default",
+      "event_count": 4007,
+      "quic_closure_events": [
+        {
+          "name": "QUIC_SESSION_CLOSED",
+          "source": {
+            "id": 136,
+            "start_time": "4911601",
+            "type": 13
+          },
+          "params": {
+            "details": "No recent network activity after 4013325us. Timeout:4s num_undecryptable_packets: 0 {}",
+            "from_peer": false,
+            "quic_error": 25
+          }
+        },
+        {
+          "name": "QUIC_SESSION_CLOSED",
+          "source": {
+            "id": 136,
+            "start_time": "4911601",
+            "type": 13
+          },
+          "params": {
+            "details": "No recent network activity after 4013325us. Timeout:4s num_undecryptable_packets: 0 {}",
+            "from_peer": false,
+            "quic_error": 25
+          }
+        },
+        {
+          "name": "QUIC_SESSION_CLOSE_ON_ERROR",
+          "source": {
+            "id": 145,
+            "start_time": "4911852",
+            "type": 13
+          },
+          "params": {
+            "net_error": -3
+          }
+        },
+        {
+          "name": "QUIC_SESSION_CLOSED",
+          "source": {
+            "id": 145,
+            "start_time": "4911852",
+            "type": 13
+          },
+          "params": {
+            "details": "net error",
+            "from_peer": false,
+            "quic_error": 70
+          }
+        },
+        {
+          "name": "QUIC_SESSION_CLOSED",
+          "source": {
+            "id": 145,
+            "start_time": "4911852",
+            "type": 13
+          },
+          "params": {
+            "details": "net error",
+            "from_peer": false,
+            "quic_error": 70
+          }
+        }
+      ],
+      "interesting_event_counts": {
+        "BOUND_TO_QUIC_SESSION_POOL_JOB": 22,
+        "HOST_RESOLVER_MANAGER_ATTEMPT_FINISHED": 6,
+        "HOST_RESOLVER_MANAGER_ATTEMPT_STARTED": 6,
+        "HOST_RESOLVER_MANAGER_CACHE_HIT": 48,
+        "HOST_RESOLVER_MANAGER_CREATE_JOB": 6,
+        "HOST_RESOLVER_MANAGER_IPV6_REACHABILITY_CHECK": 30,
+        "HOST_RESOLVER_MANAGER_JOB": 12,
+        "HOST_RESOLVER_MANAGER_JOB_ATTACH": 6,
+        "HOST_RESOLVER_MANAGER_JOB_REQUEST_ATTACH": 6,
+        "HOST_RESOLVER_MANAGER_JOB_STARTED": 6,
+        "HOST_RESOLVER_MANAGER_REQUEST": 40,
+        "HOST_RESOLVER_MANAGER_TASK_SEQUENCE_CREATED": 30,
+        "HOST_RESOLVER_SYSTEM_TASK": 12,
+        "HTTP3_LOCAL_CONTROL_STREAM_CREATED": 2,
+        "HTTP3_LOCAL_QPACK_DECODER_STREAM_CREATED": 2,
+        "HTTP3_LOCAL_QPACK_ENCODER_STREAM_CREATED": 2,
+        "QUIC_CONGESTION_CONTROL_CONFIGURED": 2,
+        "QUIC_SESSION": 4,
+        "QUIC_SESSION_CLOSE_ON_ERROR": 1,
+        "QUIC_SESSION_CLOSED": 4,
+        "QUIC_SESSION_COALESCED_PACKET_SENT": 12,
+        "QUIC_SESSION_CONNECTION_CLOSE_FRAME_SENT": 4,
+        "QUIC_SESSION_CREATED": 2,
+        "QUIC_SESSION_CRYPTO_FRAME_SENT": 32,
+        "QUIC_SESSION_PACKET_SENT": 12,
+        "QUIC_SESSION_PADDING_FRAME_SENT": 12,
+        "QUIC_SESSION_POOL_CANNOT_POOL_WITH_EXISTING_SESSIONS": 2,
+        "QUIC_SESSION_POOL_CLOSE_ALL_SESSIONS": 3,
+        "QUIC_SESSION_POOL_JOB": 28,
+        "QUIC_SESSION_POOL_JOB_BOUND_TO": 22,
+        "QUIC_SESSION_POOL_JOB_CONNECT": 4,
+        "QUIC_SESSION_POOL_JOB_RESULT": 2,
+        "QUIC_SESSION_TRANSPORT_PARAMETERS_SENT": 2
+      }
+    },
+    {
+      "file": "netlog\\2026-09-25T05-18-33-942Z-quic-disabled.json",
+      "mode": "quic-disabled",
+      "event_count": 2556,
+      "quic_closure_events": [],
+      "interesting_event_counts": {
+        "HOST_RESOLVER_MANAGER_ATTEMPT_FINISHED": 6,
+        "HOST_RESOLVER_MANAGER_ATTEMPT_STARTED": 6,
+        "HOST_RESOLVER_MANAGER_CACHE_HIT": 12,
+        "HOST_RESOLVER_MANAGER_CREATE_JOB": 6,
+        "HOST_RESOLVER_MANAGER_IPV6_REACHABILITY_CHECK": 16,
+        "HOST_RESOLVER_MANAGER_JOB": 12,
+        "HOST_RESOLVER_MANAGER_JOB_ATTACH": 10,
+        "HOST_RESOLVER_MANAGER_JOB_REQUEST_ATTACH": 10,
+        "HOST_RESOLVER_MANAGER_JOB_STARTED": 6,
+        "HOST_RESOLVER_MANAGER_REQUEST": 12,
+        "HOST_RESOLVER_MANAGER_TASK_SEQUENCE_CREATED": 16,
+        "HOST_RESOLVER_SYSTEM_TASK": 12,
+        "QUIC_SESSION_POOL_CLOSE_ALL_SESSIONS": 3
+      }
+    }
+  ]
+}

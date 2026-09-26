@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-09-25T05:44:27.515Z",
+  "results": [
+    {
+      "id": "h3-disabled",
+      "inspected_url": "https://cloudflare-quic.com/",
+      "network_screenshot": "screenshots\\manual-devtools\\h3-disabled-network.png",
+      "additional_network_screenshots": [],
+      "headers_screenshot": "screenshots\\manual-devtools\\h3-disabled-headers.png",
+      "resource_selected": true,
+      "chrome_log": "logs\\devtools-capture\\h3-disabled-chrome.log"
+    },
+    {
+      "id": "h1",
+      "inspected_url": "https://127.0.0.1:8441/?run=devtools-h1-1790314991057",
+      "network_screenshot": "screenshots\\manual-devtools\\m1-h1-network.png",
+      "additional_network_screenshots": [],
+      "headers_screenshot": "screenshots\\manual-devtools\\m2-h1-headers.png",
+      "resource_selected": true,
+      "chrome_log": "logs\\devtools-capture\\h1-chrome.log"
+    },
+    {
+      "id": "h2",
+      "inspected_url": "https://127.0.0.1:8442/?run=devtools-h2-1790315008398",
+      "network_screenshot": "screenshots\\manual-devtools\\m3-h2-network.png",
+      "additional_network_screenshots": [],
+      "headers_screenshot": "screenshots\\manual-devtools\\m4-h2-headers.png",
+      "resource_selected": true,
+      "chrome_log": "logs\\devtools-capture\\h2-chrome.log"
+    },
+    {
+      "id": "public",
+      "inspected_url": "https://www.wikipedia.org/",
+      "network_screenshot": "screenshots\\manual-devtools\\m6-public-network.png",
+      "additional_network_screenshots": [],
+      "headers_screenshot": "screenshots\\manual-devtools\\m7-public-headers.png",
+      "resource_selected": true,
+      "chrome_log": "logs\\devtools-capture\\public-chrome.log"
+    },
+    {
+      "id": "h3-default",
+      "inspected_url": "https://cloudflare-quic.com/",
+      "network_screenshot": "screenshots\\manual-devtools\\h3-default-visit1-network.png",
+      "additional_network_screenshots": [
+        "screenshots\\manual-devtools\\h3-default-visit2-network.png",
+        "screenshots\\manual-devtools\\h3-default-visit3-network.png"
+      ],
+      "headers_screenshot": "screenshots\\manual-devtools\\h3-default-headers.png",
+      "resource_selected": true,
+      "chrome_log": "logs\\devtools-capture\\h3-default-chrome.log"
+    }
+  ]
+}

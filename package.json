@@ -1,0 +1,36 @@
+{
+  "name": "web-protocol-experiment",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "install:browser": "playwright install chromium",
+    "certs": "pwsh -NoProfile -File scripts/New-LocalCertificate.ps1",
+    "up": "docker compose up --build -d",
+    "down": "docker compose down",
+    "env": "node scripts/capture-environment.mjs",
+    "smoke": "node scripts/smoke.mjs",
+    "collect": "node scripts/collect.mjs --pairs 30 --warmups 5",
+    "summarize": "node scripts/summarize.mjs",
+    "plot": "node scripts/plot.mjs",
+    "plot:paper": "python scripts/plot-paper.py",
+    "netlog:summary": "node scripts/summarize-netlog.mjs",
+    "serverlog:summary": "node scripts/summarize-server-logs.mjs",
+    "privacy:audit": "node scripts/audit-privacy.mjs",
+    "netlog:sanitize": "node scripts/sanitize-netlog.mjs",
+    "analyze": "npm run summarize && npm run plot && npm run plot:paper",
+    "verify": "node scripts/verify.mjs",
+    "devtools:h1": "node scripts/open-devtools.mjs --condition h1",
+    "devtools:h2": "node scripts/open-devtools.mjs --condition h2",
+    "devtools:public": "node scripts/open-devtools.mjs --url https://www.wikipedia.org/",
+    "devtools:capture": "node scripts/capture-devtools-evidence.mjs",
+    "h3": "node scripts/observe-h3.mjs",
+    "h3:disable-quic": "node scripts/observe-h3.mjs --disable-quic --visits 1"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0"
+  }
+}

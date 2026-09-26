@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-09-25T05:18:33.196Z",
+  "url": "https://cloudflare-quic.com/",
+  "mode": "default",
+  "browser_version": "153.0.8010.12",
+  "launch_arguments": [
+    "--log-net-log=E:\\project\\homework\\webdev\\class1\\web-protocol-experiment\\netlog\\2026-09-25T05-18-20-770Z-default.json",
+    "--net-log-capture-mode=Default"
+  ],
+  "netlog": "netlog\\2026-09-25T05-18-20-770Z-default.json",
+  "observations": [
+    {
+      "visit_index": 1,
+      "timestamp": "2026-09-25T05:18:28.839Z",
+      "document_protocol": "h2",
+      "status": 200,
+      "alt_svc": "h3=\":443\"; ma=86400",
+      "remote_address": "[2001:2::14a]:443",
+      "protocol_set": [
+        "h2"
+      ],
+      "quic_disabled": false,
+      "screenshot": "screenshots\\automated\\2026-09-25T05-18-20-770Z-default-visit1.png",
+      "error": null
+    },
+    {
+      "visit_index": 2,
+      "timestamp": "2026-09-25T05:18:31.097Z",
+      "document_protocol": "h2",
+      "status": 200,
+      "alt_svc": "h3=\":443\"; ma=86400",
+      "remote_address": "[2001:2::14a]:443",
+      "protocol_set": [
+        "h2"
+      ],
+      "quic_disabled": false,
+      "screenshot": "screenshots\\automated\\2026-09-25T05-18-20-770Z-default-visit2.png",
+      "error": null
+    },
+    {
+      "visit_index": 3,
+      "timestamp": "2026-09-25T05:18:32.908Z",
+      "document_protocol": "h2",
+      "status": 200,
+      "alt_svc": "h3=\":443\"; ma=86400",
+      "remote_address": "[2001:2::14a]:443",
+      "protocol_set": [
+        "h2"
+      ],
+      "quic_disabled": false,
+      "screenshot": "screenshots\\automated\\2026-09-25T05-18-20-770Z-default-visit3.png",
+      "error": null
+    }
+  ]
+}

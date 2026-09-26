@@ -1,0 +1,11 @@
+captured_at=2026-09-25T13:42:05.6443852+08:00
+active_power_scheme=电源方案 GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (平衡)
+battery_status=2
+estimated_charge_remaining=100
+winhttp_proxy= Current WinHTTP proxy settings:      Direct access (no proxy server). 
+user_proxy_enable=0
+user_proxy_server=127.0.0.1:7897
+system_dpi=96
+display_scale_percent=100
+docker_kernel=6.18.33.2-microsoft-standard-WSL2
+docker_os=Docker Desktop

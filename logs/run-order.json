@@ -1,0 +1,218 @@
+{
+  "generated_at": "2026-09-25T05:17:58.392Z",
+  "seed": 3607009607,
+  "pairs": 30,
+  "warmups": 5,
+  "schedule": [
+    {
+      "pair_id": 1,
+      "order": [
+        "h1",
+        "h2"
+      ]
+    },
+    {
+      "pair_id": 2,
+      "order": [
+        "h1",
+        "h2"
+      ]
+    },
+    {
+      "pair_id": 3,
+      "order": [
+        "h2",
+        "h1"
+      ]
+    },
+    {
+      "pair_id": 4,
+      "order": [
+        "h1",
+        "h2"
+      ]
+    },
+    {
+      "pair_id": 5,
+      "order": [
+        "h2",
+        "h1"
+      ]
+    },
+    {
+      "pair_id": 6,
+      "order": [
+        "h1",
+        "h2"
+      ]
+    },
+    {
+      "pair_id": 7,
+      "order": [
+        "h1",
+        "h2"
+      ]
+    },
+    {
+      "pair_id": 8,
+      "order": [
+        "h1",
+        "h2"
+      ]
+    },
+    {
+      "pair_id": 9,
+      "order": [
+        "h1",
+        "h2"
+      ]
+    },
+    {
+      "pair_id": 10,
+      "order": [
+        "h2",
+        "h1"
+      ]
+    },
+    {
+      "pair_id": 11,
+      "order": [
+        "h2",
+        "h1"
+      ]
+    },
+    {
+      "pair_id": 12,
+      "order": [
+        "h1",
+        "h2"
+      ]
+    },
+    {
+      "pair_id": 13,
+      "order": [
+        "h1",
+        "h2"
+      ]
+    },
+    {
+      "pair_id": 14,
+      "order": [
+        "h1",
+        "h2"
+      ]
+    },
+    {
+      "pair_id": 15,
+      "order": [
+        "h2",
+        "h1"
+      ]
+    },
+    {
+      "pair_id": 16,
+      "order": [
+        "h2",
+        "h1"
+      ]
+    },
+    {
+      "pair_id": 17,
+      "order": [
+        "h1",
+        "h2"
+      ]
+    },
+    {
+      "pair_id": 18,
+      "order": [
+        "h1",
+        "h2"
+      ]
+    },
+    {
+      "pair_id": 19,
+      "order": [
+        "h2",
+        "h1"
+      ]
+    },
+    {
+      "pair_id": 20,
+      "order": [
+        "h1",
+        "h2"
+      ]
+    },
+    {
+      "pair_id": 21,
+      "order": [
+        "h1",
+        "h2"
+      ]
+    },
+    {
+      "pair_id": 22,
+      "order": [
+        "h1",
+        "h2"
+      ]
+    },
+    {
+      "pair_id": 23,
+      "order": [
+        "h2",
+        "h1"
+      ]
+    },
+    {
+      "pair_id": 24,
+      "order": [
+        "h1",
+        "h2"
+      ]
+    },
+    {
+      "pair_id": 25,
+      "order": [
+        "h2",
+        "h1"
+      ]
+    },
+    {
+      "pair_id": 26,
+      "order": [
+        "h1",
+        "h2"
+      ]
+    },
+    {
+      "pair_id": 27,
+      "order": [
+        "h1",
+        "h2"
+      ]
+    },
+    {
+      "pair_id": 28,
+      "order": [
+        "h2",
+        "h1"
+      ]
+    },
+    {
+      "pair_id": 29,
+      "order": [
+        "h2",
+        "h1"
+      ]
+    },
+    {
+      "pair_id": 30,
+      "order": [
+        "h2",
+        "h1"
+      ]
+    }
+  ]
+}

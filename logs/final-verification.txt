@@ -1,0 +1,72 @@
+Final verification UTC: 2026-09-25T09:46:43.7545545Z
+
+=== npm run verify ===
+npm notice run web-protocol-experiment@1.0.0 verify
+npm notice run node scripts/verify.mjs
+h1: 30 runs, 30 valid
+h2: 30 runs, 30 valid
+All 60 measured runs passed the declared validity checks.
+exit_code=0
+
+=== npm run analyze ===
+npm notice run web-protocol-experiment@1.0.0 analyze
+npm notice run npm run summarize && npm run plot
+npm notice run web-protocol-experiment@1.0.0 summarize
+npm notice run node scripts/summarize.mjs
+Wrote processed data for 60 runs (60 valid) and 30 valid pairs.
+npm notice run web-protocol-experiment@1.0.0 plot
+npm notice run node scripts/plot.mjs
+Wrote SVG figures to E:\project\homework\webdev\class1\web-protocol-experiment\figures
+exit_code=0
+
+=== npm run serverlog:summary ===
+npm notice run web-protocol-experiment@1.0.0 serverlog:summary
+npm notice run node scripts/summarize-server-logs.mjs
+Saved E:\project\homework\webdev\class1\web-protocol-experiment\processed\server-concurrency-summary.json
+exit_code=0
+
+=== npm run netlog:summary ===
+npm notice run web-protocol-experiment@1.0.0 netlog:summary
+npm notice run node scripts/summarize-netlog.mjs
+Saved E:\project\homework\webdev\class1\web-protocol-experiment\processed\h3-netlog-summary.json
+exit_code=0
+
+=== npm run privacy:audit ===
+npm notice run web-protocol-experiment@1.0.0 privacy:audit
+npm notice run node scripts/audit-privacy.mjs
+PASS: saved E:\project\homework\webdev\class1\web-protocol-experiment\logs\privacy-audit.json
+exit_code=0
+
+=== node --check scripts ===
+PASS scripts\audit-privacy.mjs
+PASS scripts\capture-devtools-evidence.mjs
+PASS scripts\capture-environment.mjs
+PASS scripts\collect.mjs
+PASS scripts\lib\experiment.mjs
+PASS scripts\observe-h3.mjs
+PASS scripts\open-devtools.mjs
+PASS scripts\plot.mjs
+PASS scripts\sanitize-netlog.mjs
+PASS scripts\smoke.mjs
+PASS scripts\summarize-netlog.mjs
+PASS scripts\summarize-server-logs.mjs
+PASS scripts\summarize.mjs
+PASS scripts\verify.mjs
+
+=== docker compose config --quiet ===
+PASS
+
+=== npm ls --depth=0 ===
+web-protocol-experiment@1.0.0 E:\project\homework\webdev\class1\web-protocol-experiment
+└── playwright@1.63.0
+
+=== artifact counts ===
+raw_h1_json=30
+raw_h2_json=30
+warmup_h1_json=5
+warmup_h2_json=5
+manual_devtools_png=13
+automated_png=8
+har_files=2
+netlog_files=2
+overall=PASS
