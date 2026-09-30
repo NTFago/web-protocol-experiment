@@ -4,17 +4,19 @@ import {
   ROOT,
   CONDITIONS,
   ensureArtifactDirectories,
+  localH3LaunchArguments,
   timestampForFilename,
   runSingle,
   writeJson
 } from "./lib/experiment.mjs";
 
 await ensureArtifactDirectories();
-const browser = await chromium.launch({ headless: true });
+const { launchArguments } = await localH3LaunchArguments();
+const browser = await chromium.launch({ headless: true, args: launchArguments });
 const results = [];
 
 try {
-  for (const conditionName of ["h1", "h2"]) {
+  for (const conditionName of ["h1", "h2", "h3"]) {
     const runId = `smoke-${conditionName}-${timestampForFilename()}`;
     const result = await runSingle(browser, {
       condition: CONDITIONS[conditionName],

@@ -13,13 +13,15 @@
     "down": "docker compose down",
     "env": "node scripts/capture-environment.mjs",
     "smoke": "node scripts/smoke.mjs",
-    "collect": "node scripts/collect.mjs --pairs 30 --warmups 5",
+    "collect": "node scripts/collect.mjs --blocks 30 --warmups 5",
     "summarize": "node scripts/summarize.mjs",
     "plot": "node scripts/plot.mjs",
     "plot:paper": "python scripts/plot-paper.py",
     "netlog:summary": "node scripts/summarize-netlog.mjs",
     "serverlog:summary": "node scripts/summarize-server-logs.mjs",
+    "capture:logs": "node scripts/capture-compose-evidence.mjs",
     "privacy:audit": "node scripts/audit-privacy.mjs",
+    "checksums": "node scripts/generate-checksums.mjs",
     "netlog:sanitize": "node scripts/sanitize-netlog.mjs",
     "analyze": "npm run summarize && npm run plot && npm run plot:paper",
     "verify": "node scripts/verify.mjs",
@@ -28,7 +30,8 @@
     "devtools:public": "node scripts/open-devtools.mjs --url https://www.wikipedia.org/",
     "devtools:capture": "node scripts/capture-devtools-evidence.mjs",
     "h3": "node scripts/observe-h3.mjs",
-    "h3:disable-quic": "node scripts/observe-h3.mjs --disable-quic --visits 1"
+    "h3:disable-quic": "node scripts/observe-h3.mjs --disable-quic --visits 1",
+    "h3:local": "node scripts/validate-h3-local.mjs"
   },
   "devDependencies": {
     "playwright": "1.63.0"

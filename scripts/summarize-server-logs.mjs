@@ -2,10 +2,14 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { ROOT, ensureArtifactDirectories } from "./lib/experiment.mjs";
 
+const CONDITIONS = ["h1", "h2", "h3"];
 await ensureArtifactDirectories();
 
+const manifest = JSON.parse(await fs.readFile(path.join(ROOT, "logs", "tri-protocol-run-order.json"), "utf8"));
+const rawRoot = path.join(ROOT, ...manifest.raw_root.split("/"));
+
 async function loadMeasuredRuns(condition) {
-  const directory = path.join(ROOT, "raw", condition);
+  const directory = path.join(rawRoot, condition);
   const filenames = (await fs.readdir(directory)).filter((name) => name.endsWith(".json")).sort();
   return Promise.all(filenames.map(async (filename) => JSON.parse(await fs.readFile(path.join(directory, filename), "utf8"))));
 }
@@ -16,7 +20,7 @@ function median(values) {
   return sorted.length % 2 ? sorted[middle] : (sorted[middle - 1] + sorted[middle]) / 2;
 }
 
-const measuredRuns = [...(await loadMeasuredRuns("h1")), ...(await loadMeasuredRuns("h2"))];
+const measuredRuns = (await Promise.all(CONDITIONS.map(loadMeasuredRuns))).flat();
 const runMetadata = new Map(measuredRuns.map((run) => [run.run_id, run]));
 const aggregates = new Map(
   measuredRuns.map((run) => [
@@ -24,7 +28,7 @@ const aggregates = new Map(
     {
       run_id: run.run_id,
       condition: run.condition,
-      pair_id: run.pair_id,
+      block_id: run.block_id,
       svg_request_count: 0,
       max_active_svg_requests: 0,
       reported_peak_active_svg_requests: 0,
@@ -33,7 +37,7 @@ const aggregates = new Map(
   ])
 );
 
-const composeLog = await fs.readFile(path.join(ROOT, "logs", "compose-logs.txt"), "utf8");
+const composeLog = await fs.readFile(path.join(ROOT, "logs", "tri-protocol-compose-logs.txt"), "utf8");
 for (const line of composeLog.split(/\r?\n/)) {
   const jsonStart = line.indexOf("{");
   if (jsonStart < 0) continue;
@@ -55,26 +59,38 @@ for (const line of composeLog.split(/\r?\n/)) {
 }
 
 const runs = [...aggregates.values()]
-  .map((run) => ({ ...run, unique_upstream_socket_count: run.upstream_sockets.size, upstream_sockets: [...run.upstream_sockets].sort() }))
-  .sort((left, right) => left.condition.localeCompare(right.condition) || left.pair_id - right.pair_id);
+  .map((run) => ({
+    ...run,
+    unique_upstream_socket_count: run.upstream_sockets.size,
+    upstream_sockets: [...run.upstream_sockets].sort()
+  }))
+  .sort((left, right) => left.condition.localeCompare(right.condition) || left.block_id - right.block_id);
 
 const byCondition = {};
-for (const condition of ["h1", "h2"]) {
+for (const condition of CONDITIONS) {
   const selected = runs.filter((run) => run.condition === condition);
   const concurrency = selected.map((run) => run.max_active_svg_requests);
   const socketCounts = selected.map((run) => run.unique_upstream_socket_count);
   byCondition[condition] = {
     n: selected.length,
     svg_request_counts: [...new Set(selected.map((run) => run.svg_request_count))].sort((a, b) => a - b),
-    max_active_svg_requests: { min: Math.min(...concurrency), median: median(concurrency), max: Math.max(...concurrency) },
-    unique_upstream_socket_count: { min: Math.min(...socketCounts), median: median(socketCounts), max: Math.max(...socketCounts) }
+    max_active_svg_requests: {
+      min: Math.min(...concurrency),
+      median: median(concurrency),
+      max: Math.max(...concurrency)
+    },
+    unique_upstream_socket_count: {
+      min: Math.min(...socketCounts),
+      median: median(socketCounts),
+      max: Math.max(...socketCounts)
+    }
   };
 }
 
 const outputPath = path.join(ROOT, "processed", "server-concurrency-summary.json");
 await fs.writeFile(
   outputPath,
-  `${JSON.stringify({ generated_at: new Date().toISOString(), by_condition: byCondition, runs }, null, 2)}\n`,
+  `${JSON.stringify({ generated_at: new Date().toISOString(), campaign_id: manifest.campaign_id, by_condition: byCondition, runs }, null, 2)}\n`,
   "utf8"
 );
 process.stdout.write(`Saved ${outputPath}\n`);

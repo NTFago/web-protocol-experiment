@@ -1,4 +1,5 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
+import crypto from "node:crypto";
 import path from "node:path";
 import os from "node:os";
 import { createRequire } from "node:module";
@@ -9,10 +10,32 @@ const playwrightVersion = require("playwright/package.json").version;
 export const ROOT = path.resolve(import.meta.dirname, "..", "..");
 export const CONDITIONS = Object.freeze({
   h1: { name: "h1", url: "https://127.0.0.1:8441/", expectedProtocol: "http/1.1" },
-  h2: { name: "h2", url: "https://127.0.0.1:8442/", expectedProtocol: "h2" }
+  h2: { name: "h2", url: "https://127.0.0.1:8442/", expectedProtocol: "h2" },
+  h3: { name: "h3", url: "https://127.0.0.1:8443/", expectedProtocol: "h3" }
 });
 export const EXPECTED_TEST_REQUESTS = 28;
 export const EXPECTED_SVG_REQUESTS = 24;
+
+export async function localCertificateSpkiSha256() {
+  const certificatePath = path.join(ROOT, "nginx", "certs", "localhost.crt");
+  const certificatePem = await readFile(certificatePath, "utf8");
+  const certificate = new crypto.X509Certificate(certificatePem);
+  const spki = certificate.publicKey.export({ type: "spki", format: "der" });
+  return crypto.createHash("sha256").update(spki).digest("base64");
+}
+
+export async function localH3LaunchArguments(netLogPath = null) {
+  const spkiSha256 = await localCertificateSpkiSha256();
+  const launchArguments = [
+    "--enable-quic",
+    "--origin-to-force-quic-on=127.0.0.1:8443",
+    `--ignore-certificate-errors-spki-list=${spkiSha256}`
+  ];
+  if (netLogPath) {
+    launchArguments.push(`--log-net-log=${netLogPath}`, "--net-log-capture-mode=Default");
+  }
+  return { launchArguments, spkiSha256 };
+}
 
 export async function ensureArtifactDirectories() {
   const directories = [
@@ -185,6 +208,8 @@ export async function runSingle(browser, options) {
     runId,
     pairId = null,
     orderInPair = null,
+    blockId = null,
+    orderInBlock = null,
     phase = "measured",
     screenshotPath = null,
     harPath = null,
@@ -360,6 +385,8 @@ export async function runSingle(browser, options) {
     phase,
     pair_id: pairId,
     order_in_pair: orderInPair,
+    block_id: blockId,
+    order_in_block: orderInBlock,
     condition: condition.name,
     url: condition.url,
     os_version: `${os.platform()} ${os.release()}`,
@@ -404,4 +431,3 @@ export async function appendNdjson(relativePath, value) {
   await appendFile(absolutePath, `${JSON.stringify(value)}\n`, "utf8");
   return absolutePath;
 }
-

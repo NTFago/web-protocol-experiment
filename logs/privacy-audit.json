@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T03:50:48.300Z",
+  "generated_at": "2026-09-30T11:05:59.900Z",
   "safe": true,
   "note": "Screenshots were also visually checked for account or desktop information.",
   "findings": [
@@ -12,6 +12,27 @@
     },
     {
       "file": "har/h2-representative.har",
+      "entry_count": 28,
+      "cookie_object_count": 0,
+      "sensitive_header_count": 0,
+      "safe": true
+    },
+    {
+      "file": "har/tri-2026-09-28T09-13-29-570Z-h1-representative.har",
+      "entry_count": 28,
+      "cookie_object_count": 0,
+      "sensitive_header_count": 0,
+      "safe": true
+    },
+    {
+      "file": "har/tri-2026-09-28T09-13-29-570Z-h2-representative.har",
+      "entry_count": 28,
+      "cookie_object_count": 0,
+      "sensitive_header_count": 0,
+      "safe": true
+    },
+    {
+      "file": "har/tri-2026-09-28T09-13-29-570Z-h3-representative.har",
       "entry_count": 28,
       "cookie_object_count": 0,
       "sensitive_header_count": 0,
@@ -31,6 +52,24 @@
       "stripped_cookie_header_count": 0,
       "stripped_set_cookie_header_count": 16,
       "sanitized_set_cookie_header_count": 2,
+      "authorization_header_count": 0,
+      "unstripped_sensitive_header_count": 0,
+      "safe": true
+    },
+    {
+      "file": "netlog/2026-09-28T08-59-36-384Z-local-h3.json",
+      "stripped_cookie_header_count": 0,
+      "stripped_set_cookie_header_count": 0,
+      "sanitized_set_cookie_header_count": 0,
+      "authorization_header_count": 0,
+      "unstripped_sensitive_header_count": 0,
+      "safe": true
+    },
+    {
+      "file": "netlog/tri-2026-09-28T09-13-29-570Z.json",
+      "stripped_cookie_header_count": 0,
+      "stripped_set_cookie_header_count": 0,
+      "sanitized_set_cookie_header_count": 0,
       "authorization_header_count": 0,
       "unstripped_sensitive_header_count": 0,
       "safe": true

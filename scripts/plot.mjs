@@ -50,7 +50,7 @@ function boxPlotSvg(title, unit, groups) {
   const plotHeight = height - margin.top - margin.bottom;
   const y = (value) => margin.top + ((maximum - value) / (maximum - minimum)) * plotHeight;
   const groupWidth = (width - margin.left - margin.right) / groups.length;
-  const colors = ["#496f96", "#c06a42"];
+  const colors = ["#496f96", "#c06a42", "#3c8d6d"];
   const elements = [];
 
   elements.push(`<rect width="${width}" height="${height}" fill="#ffffff"/>`);
@@ -112,8 +112,10 @@ function pairedDifferenceSvg(title, metric, pairs) {
 
 const raw = JSON.parse(await readFile(path.join(ROOT, "processed", "summary.json"), "utf8"));
 const runs = [];
-for (const condition of ["h1", "h2"]) {
-  const directory = path.join(ROOT, "raw", condition);
+const conditions = ["h1", "h2", "h3"];
+const rawRoot = path.join(ROOT, ...raw.campaign.raw_root.split("/"));
+for (const condition of conditions) {
+  const directory = path.join(rawRoot, condition);
   const { readdir } = await import("node:fs/promises");
   const names = (await readdir(directory)).filter((name) => name.endsWith(".json"));
   for (const name of names) runs.push(JSON.parse(await readFile(path.join(directory, name), "utf8")));
@@ -130,22 +132,13 @@ const charts = [
 ];
 
 for (const [filename, title, unit, metric] of charts) {
-  const groups = ["h1", "h2"].map((condition) => ({
-    label: condition === "h1" ? "HTTP/1.1" : "HTTP/2",
+  const groups = conditions.map((condition) => ({
+    label: ({ h1: "HTTP/1.1", h2: "HTTP/2", h3: "HTTP/3" })[condition],
     values: validRuns.filter((run) => run.condition === condition).map((run) => run[metric]).filter(Number.isFinite)
   }));
   if (groups.every((group) => group.values.length)) {
     await writeFile(path.join(outputDirectory, filename), boxPlotSvg(title, unit, groups), "utf8");
   }
-}
-
-const validPairs = raw.paired.filter((pair) => pair.pair_valid && Number.isFinite(pair.diff_load_ms));
-if (validPairs.length) {
-  await writeFile(
-    path.join(outputDirectory, "paired-load-difference.svg"),
-    pairedDifferenceSvg("Paired load-time difference", "load_ms", validPairs),
-    "utf8"
-  );
 }
 
 process.stdout.write(`Wrote SVG figures to ${outputDirectory}\n`);

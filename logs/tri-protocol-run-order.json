@@ -1,0 +1,273 @@
+{
+  "generated_at": "2026-09-28T09:15:11.158Z",
+  "campaign_id": "tri-2026-09-28T09-13-29-570Z",
+  "raw_root": "raw/tri-protocol/tri-2026-09-28T09-13-29-570Z",
+  "run_log": "logs/tri-2026-09-28T09-13-29-570Z-run-log.ndjson",
+  "netlog": "netlog\\tri-2026-09-28T09-13-29-570Z.json",
+  "seed": 20260928,
+  "blocks": 30,
+  "warmups_per_condition": 5,
+  "condition_names": [
+    "h1",
+    "h2",
+    "h3"
+  ],
+  "schedule": [
+    {
+      "block_id": 1,
+      "order": [
+        "h1",
+        "h2",
+        "h3"
+      ]
+    },
+    {
+      "block_id": 2,
+      "order": [
+        "h1",
+        "h2",
+        "h3"
+      ]
+    },
+    {
+      "block_id": 3,
+      "order": [
+        "h2",
+        "h3",
+        "h1"
+      ]
+    },
+    {
+      "block_id": 4,
+      "order": [
+        "h1",
+        "h3",
+        "h2"
+      ]
+    },
+    {
+      "block_id": 5,
+      "order": [
+        "h3",
+        "h2",
+        "h1"
+      ]
+    },
+    {
+      "block_id": 6,
+      "order": [
+        "h2",
+        "h1",
+        "h3"
+      ]
+    },
+    {
+      "block_id": 7,
+      "order": [
+        "h2",
+        "h3",
+        "h1"
+      ]
+    },
+    {
+      "block_id": 8,
+      "order": [
+        "h3",
+        "h1",
+        "h2"
+      ]
+    },
+    {
+      "block_id": 9,
+      "order": [
+        "h2",
+        "h3",
+        "h1"
+      ]
+    },
+    {
+      "block_id": 10,
+      "order": [
+        "h1",
+        "h2",
+        "h3"
+      ]
+    },
+    {
+      "block_id": 11,
+      "order": [
+        "h3",
+        "h2",
+        "h1"
+      ]
+    },
+    {
+      "block_id": 12,
+      "order": [
+        "h3",
+        "h1",
+        "h2"
+      ]
+    },
+    {
+      "block_id": 13,
+      "order": [
+        "h1",
+        "h2",
+        "h3"
+      ]
+    },
+    {
+      "block_id": 14,
+      "order": [
+        "h3",
+        "h2",
+        "h1"
+      ]
+    },
+    {
+      "block_id": 15,
+      "order": [
+        "h2",
+        "h3",
+        "h1"
+      ]
+    },
+    {
+      "block_id": 16,
+      "order": [
+        "h1",
+        "h3",
+        "h2"
+      ]
+    },
+    {
+      "block_id": 17,
+      "order": [
+        "h3",
+        "h1",
+        "h2"
+      ]
+    },
+    {
+      "block_id": 18,
+      "order": [
+        "h3",
+        "h1",
+        "h2"
+      ]
+    },
+    {
+      "block_id": 19,
+      "order": [
+        "h3",
+        "h2",
+        "h1"
+      ]
+    },
+    {
+      "block_id": 20,
+      "order": [
+        "h2",
+        "h1",
+        "h3"
+      ]
+    },
+    {
+      "block_id": 21,
+      "order": [
+        "h2",
+        "h1",
+        "h3"
+      ]
+    },
+    {
+      "block_id": 22,
+      "order": [
+        "h2",
+        "h1",
+        "h3"
+      ]
+    },
+    {
+      "block_id": 23,
+      "order": [
+        "h1",
+        "h3",
+        "h2"
+      ]
+    },
+    {
+      "block_id": 24,
+      "order": [
+        "h3",
+        "h2",
+        "h1"
+      ]
+    },
+    {
+      "block_id": 25,
+      "order": [
+        "h1",
+        "h3",
+        "h2"
+      ]
+    },
+    {
+      "block_id": 26,
+      "order": [
+        "h2",
+        "h1",
+        "h3"
+      ]
+    },
+    {
+      "block_id": 27,
+      "order": [
+        "h2",
+        "h3",
+        "h1"
+      ]
+    },
+    {
+      "block_id": 28,
+      "order": [
+        "h1",
+        "h3",
+        "h2"
+      ]
+    },
+    {
+      "block_id": 29,
+      "order": [
+        "h1",
+        "h2",
+        "h3"
+      ]
+    },
+    {
+      "block_id": 30,
+      "order": [
+        "h3",
+        "h1",
+        "h2"
+      ]
+    }
+  ],
+  "permutation_counts": {
+    "h1>h2>h3": 5,
+    "h1>h3>h2": 5,
+    "h2>h1>h3": 5,
+    "h2>h3>h1": 5,
+    "h3>h1>h2": 5,
+    "h3>h2>h1": 5
+  },
+  "browser_launch_arguments": [
+    "--enable-quic",
+    "--origin-to-force-quic-on=127.0.0.1:8443",
+    "--ignore-certificate-errors-spki-list=8cWaFeZnCgdt8XcLSrRhP16f6cUh7vA1GV6bkRGYsgw=",
+    "--log-net-log=E:\\project\\homework\\webdev\\class1\\web-protocol-experiment\\netlog\\tri-2026-09-28T09-13-29-570Z.json",
+    "--net-log-capture-mode=Default"
+  ],
+  "certificate_spki_sha256": "8cWaFeZnCgdt8XcLSrRhP16f6cUh7vA1GV6bkRGYsgw="
+}

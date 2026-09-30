@@ -1,11 +1,11 @@
-captured_at=2026-09-25T05:16:33.011Z
+captured_at=2026-09-28T09:12:55.752Z
 timezone=Asia/Shanghai
 os=Windows_NT 10.0.26200 x64
 cpu=AMD Ryzen 7 8845HS w/ Radeon 780M Graphics
 logical_cpu_count=16
 memory_bytes=34155122688
 node=v24.15.0
-npm=12.0.2
+npm=12.1.0
 playwright=1.63.0
 chromium=153.0.8010.12
 chromium_executable=C:\Users\Administrator\AppData\Local\ms-playwright\chromium-1243\chrome-win64\chrome.exe
@@ -23,7 +23,7 @@ Features: alt-svc AsynchDNS HSTS HTTPS-proxy IDN IPv6 Kerberos Largefile libz SP
 
 docker_compose_images:
 CONTAINER                         REPOSITORY                    TAG                 PLATFORM            IMAGE ID            SIZE                CREATED
-web-protocol-experiment-app-1     web-protocol-experiment-app   latest              linux/amd64         039ff3574fce        56.6MB              4 minutes ago
+web-protocol-experiment-app-1     web-protocol-experiment-app   latest              linux/amd64         4e557839d736        56.6MB              3 days ago
 web-protocol-experiment-nginx-1   nginx                         1.28.0-alpine       linux/amd64         30f1c0d78e0a        21MB                17 months ago
 
 manual_notes:
